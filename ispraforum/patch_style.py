@@ -26,8 +26,8 @@ def patch_ispra_ig(site):
     _update_logo(site, logo_id='right_logo.gif', delete=True)
     _update_logo(site, 'left_logo.gif', 'left_logo.png', 'image/png',
                  'Site left logo')
-    site.mail_address_from = 'no-reply@groupware.info-rac.org'
-    site.notify_on_errors_email = 'naayacrashteam@eaudeweb.ro'
+    site.mail_address_from = 'webmaster@info-rac.org'
+    site.notify_on_errors_email = 'webmaster@info-rac.org'
     patch_template(tmpl)
 
 def patch_sinanet_ig(site):
